@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jan  8 10:33:13 2022
+
+@author: janaki
+"""
+
+emp_id = input()
+new_emp_id = ''
+for ch in emp_id:
+    if ch=='0':
+        new_emp_id+='9'
+    else:
+        new_emp_id += str(int(ch)-1)
+print(new_emp_id)
