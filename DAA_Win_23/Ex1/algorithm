@@ -1,0 +1,7 @@
+1. Read the number of mark details of a quiz, n
+2. Read the data of each participant
+3. Assume the first participant scored the minimum and maximum
+4. From the second participant, for each participant 'p'  repeat step 5 and 6
+5. If mark of  participant 'p' is less than current minimum mark particpant then make 'p' as minimum mark participant
+6. If mark of  participant 'p' is greater than current maximum mark particpant then make 'p' as maximum mark participant
+7. Print details of minimum mark participant and maximum mark participant
