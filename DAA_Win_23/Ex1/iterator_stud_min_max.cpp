@@ -21,10 +21,12 @@ istream& operator>>(istream& in, student& s)
 {
 	cout<<"Enter name and marks";
 	in>>s.name>>s.marks;
+	return in;
 }
 ostream& operator<<(ostream& out, student& s)
 {
 	out<<s.name<<"\t"<<s.marks<<endl;
+	return out;
 }
 bool student::operator<(student& s)
 {

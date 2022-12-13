@@ -6,7 +6,7 @@ Created on Tue Jan  4 21:32:01 2022
 @author: janaki
 """
 import random
-n = 3000000
+n = 10000000
 with open("random_" + str(n) + ".txt","w") as fp:
 	fp.write(str(n)+"\n")  
 	for i in range(1,n):
@@ -15,3 +15,6 @@ with open("random_" + str(n) + ".txt","w") as fp:
 	x = random.random()
 	fp.write(str(int(x*n))+"\n")  
 fp.close()
+
+
+
