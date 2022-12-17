@@ -1,0 +1,9 @@
+1. Create a folder for each exercise
+2. Copy the code from github, paste in a text editor save with proper extension Cpp or py
+3. Right click and open in terminal
+4. python3 random1.py will generate data, change value of 'n' and get data of different sizes
+5. To compile code with auto, g++ iter_min_max.cpp --std=c++11
+6. ./a.out < random_1000.txt - Note down time taken
+7. Run the code as in step 6 with different data
+8. Plot a graph and observe the pattern of the graph
+
