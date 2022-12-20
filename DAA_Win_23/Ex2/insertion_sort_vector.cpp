@@ -1,15 +1,19 @@
 #include<iostream>
 #include<vector>
+#include<ctime>
 using namespace std;
 int main()
 {
-    vector<int> elements(20,0);
-    int key,i,j,n;
+    vector<int> elements;
+    int key,i,j,n,ele;
     //cout<<"Enter number of elements";
     cin>>n;
     for(i=0;i<n;i++)
-        cin>>elements[i];
-    
+{
+        cin>>ele;
+	elements.push_back(ele);
+}
+	clock_t tStart = clock();    
     for(j=1;j<n;j++)
     {
         key = elements[j];
@@ -21,9 +25,10 @@ int main()
         }
         elements[i+1] = key;
     }
-
-   for(i=0;i<n;i++)
+double time1=(double)(clock() - tStart)/CLOCKS_PER_SEC;
+	cout<<"Time taken is "<<time1<<endl;
+   /*for(i=0;i<n;i++)
     {
         cout<<elements[i]<<" ";
-    }
+    }*/
 }
