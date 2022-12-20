@@ -7,7 +7,7 @@ Created on Tue Jan  4 21:32:01 2022
 """
 import random
 n = 50000
-fp = open("random_50000.txt","w")
+fp = open("random_"+str(n)+".txt","w")
 fp.write(str(n)+" ")  
 for i in range(1,n):
     x = random.random()
