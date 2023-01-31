@@ -15,3 +15,6 @@ for i in range(1,n):
 x = random.random()
 fp.write(str(int(x*n))+" ")  
 fp.close()
+
+
+

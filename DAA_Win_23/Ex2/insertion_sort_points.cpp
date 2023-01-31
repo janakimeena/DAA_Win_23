@@ -28,6 +28,7 @@ istream& operator>>(istream& in, point &p)
 ostream& operator<<(ostream& out,point &p)
 {
     out<<p.x<<" "<<p.y<<endl;
+	return out;
 }
 int main()
 {
