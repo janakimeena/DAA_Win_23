@@ -20,14 +20,14 @@ int memoized_cut_rod(vector<int> &p, int length)
 int memoized_cut_rod_aux(vector<int> &p, int length,vector<int> &r)
 {
     int q;
-    if(r[length-1]>=0)
-        return(r[length-1]);
+    if(r[length]>=0)
+        return(r[length]);
     if(length==0)
         return 0;
     q = INT_MIN;
     for(int i=1;i<=length;i++)
         q = maximum(q,p[i-1]+memoized_cut_rod_aux(p,length-i,r));
-    r[length-1] = q;
+    r[length] = q;
     return q;
 }
 int main()
